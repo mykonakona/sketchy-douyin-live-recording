@@ -5,7 +5,7 @@
 import requests
 import re
 
-class DouYin:
+class Douyin:
 
     def __init__(self, rid):
         self.rid = rid

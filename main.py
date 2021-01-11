@@ -6,6 +6,6 @@ if __name__ == '__main__':
 
     app = gui.Application(root)
     # 设置窗口标题:
-    app.master.title('简陋dy直播录制gui v0.0.2')
+    app.master.title('简陋dy直播录制gui v0.1.1')
     # 主消息循环:
     app.mainloop()

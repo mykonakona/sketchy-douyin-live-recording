@@ -444,9 +444,9 @@ class M3U8Downloader(threading.Thread):
     pass
 
 
-def record(index_m3u8, ctx):
+def record(index_m3u8):
     #### The test codes
-    #ctx = Resource()
+    ctx = Resource()
     folder_callback = lambda: time.strftime('Record%Y_%m_%dAT%Hh%Mm%Ss_LiveStream', time.localtime())
     downloader = M3U8Downloader(index_m3u8, 'LiveRecordData', ctx, dump_time=60, folder_callback=folder_callback)
     downloader.start()
