@@ -5,3 +5,5 @@ venv/
 __pycache__/
 *.spec
 *.exe
+*.log
+LiveRecordData/

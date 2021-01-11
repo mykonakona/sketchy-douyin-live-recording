@@ -1,5 +1,8 @@
 # 简陋douyin直播录制gui
 
+## v0.0.2
+ffmpeg总是断掉，太不稳定了。所以录制的部分打算改掉，现在把[OpenCRS](https://github.com/KamijoToma/OpenCRS)拿来用了，但还没有机会做测试。
+
 ## 简介
 python大作业水平，一个把各种代码拿来用的缝合怪，抄了以下代码：
 

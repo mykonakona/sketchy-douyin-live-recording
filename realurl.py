@@ -22,6 +22,8 @@ class DouYin:
             response = requests.get(url=room_url).text
             rtmp_pull_url = re.search(r'"rtmp_pull_url":"(.*?flv)"', response).group(1)
             hls_pull_url = re.search(r'"hls_pull_url":"(.*?m3u8)"', response).group(1)
+            print(rtmp_pull_url)
+            print(hls_pull_url)
             real_url = [rtmp_pull_url, hls_pull_url]
         except:
             raise Exception('直播间不存在或未开播或参数错误')
