@@ -155,7 +155,9 @@ def download_single(url, file_name='', stream=False, path='./', try_time=5):
 
 
 def get_timestamp_from_ts_filename(filename: str) -> int:
-    return int(filename.split('.')[0].split('-')[1])
+    #result = int(filename.split('.')[0].split('-')[1])
+    result = int(filename.split('.')[2].split('-')[2])
+    return result
 
 
 def get_m3u8_ts_list(m3u8_url: str) -> {}:
